@@ -1,60 +1,71 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
-\moderncvstyle{classic}
-\moderncvcolor{black}
-
+\documentclass[letterpaper,11pt]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.75]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
 
-% Personal Information
-\firstname{Your First Name}
-\familyname{Dao}
-\title{Full-Stack Developer}
-\address{Ho Chi Minh City}{Viet Nam}
-\phone{+84933626024}
-\email{dao.minh@outlook.com}
-\social[linkedin]{https://www.linkedin.com/in/le-minh-dao/}
+% Define custom colors
+\definecolor{black}{RGB}{0,0,0}
+\definecolor{gray}{RGB}{128,128,128}
+
+% Set fonts
+\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{phv}
+
+% Customize itemize environment
+\setlist[itemize]{left=0em,labelsep=1em}
+\renewcommand{\labelitemi}{\textbullet}
 
 \begin{document}
-\makecvtitle
+\pagestyle{empty}
 
-\section{Summary}
-\cvitem{}{An experienced full-stack web developer looking forward to a challenging work environment. Skilled in creating visually appealing and user-friendly websites. A problem solver who delivers high-quality work, finding satisfaction in both feature functionality and problem-solving. My work style involves it digging into the core concepts and gaining a deep understanding of the problem before proposing solutions. A highly motivated individual who adeptly multitasks, prioritizes, and meets challenging deadlines, all while delivering superior performance standards.}
+\begin{center}
+    \textbf{\Huge Dao Le Minh} \\
+    \vspace{2mm}
+    Full-Stack Developer \\
+    \vspace{2mm}
+    \textcolor{gray}{Email: \textit{dao.minh@outlook.com}} \\
+    \vspace{2mm}
+    \textcolor{gray}{\textit{https://www.linkedin.com/in/le-minh-dao/}} \\
+    \vspace{2mm}
+    \textcolor{gray}{\textit{Ho Chi Minh City} | Vietnam}
+\end{center}
 
-\section{Education}
-\cventry{2015--2019}{Bachelor's Degree}{Stamford International University}{Bangkok, Thailand}{\textit{GPA: 3.86/4}{With specialized certification in Software Engineering. Achieved High Distinctions.}
+\section*{Summary}
+An experienced full-stack web developer looking forward to a challenging work environment. Skilled in creating visually appealing and user-friendly websites. A problem solver who delivers high-quality work, finding satisfaction in both feature functionality and problem-solving. My work style involves it digging into the core concepts and gaining a deep understanding of the problem before proposing solutions. A highly motivated individual who adeptly multitasks, prioritizes, and meets challenging deadlines, all while delivering superior performance standards.
 
-\section{Experience}
-\cventry{06/2023 -- Present}{Back-end Developer}{FPT Software}{Ho Chi Minh City, Viet Nam}{}
-{
+\section*{Experience}
+\subsection*{Jun 2023 -- Present | Back-end Developer | FPT Software | Ho Chi Minh City, Viet Nam}
 \begin{itemize}
     \item Assisting in the development of web applications using micro-services and TypeScript.
     \item Contributing to database management tasks using MySQL.
     \item Working closely with the client to ensure product deliverables match standards.
 \end{itemize}
-}
 
-\cventry{June 2019 -- Feb 2023}{Full-Stack Developer}{Bitkub Blockchain Technology}{Bangkok, Thailand}{}
-{
+\subsection*{June 2019 -- Feb 2023 | Full-stack Developer | Bitkub Blockchain Technology | Bangkok, Thailand}
 \begin{itemize}
     \item Developed and maintained web applications using Node.JS and React.JS.
     \item Worked on database design and management using MySQL, Postgres and MongoDB.
-    \item Implemented RESTful APIs for data communication.
+    \item Implemented REST APIs for data communication.
     \item Collaborated with cross-functional teams to deliver high-quality software products.
     \item Troubleshooted and resolved application defects and performance issues.
 \end{itemize}
-}
 
-\section{Skills}
-\cvitem{Programming Languages}{JavaScript, TypeScript}
-\cvitem{Web Technologies}{Node.JS, React.JS, HTML, CSS}
-\cvitem{Databases}{MySQL, Postgres, MongoDB, Redis}
-\cvitem{API}{REST API}
-\cvitem{Operating Systems}{Linux, MacOS}
-\cvitem{Tools}{Docker, Jenkin, Gitlab CI, Git}
+\section*{Education}
+\subsection*{Bachelor of Science, Information Technology | Stamford International University | Bangkok, Thailand | 2019--2023}
+\begin{itemize}
+    \item GPA: 3.86/4. With specialized certification in Software Engineering. Achieved High Distinctions.
+\end{itemize}
 
-\section{Languages}
-\cvitem{English}{Fluent}
-
-Available upon request.
+\section*{Skills}
+\begin{itemize}
+    \item Programming Languages: JavaScript, TypeScript
+    \item Web Technologies: Node.JS, Next.JS, HTML, CSS
+    \item Databases: MySQL, Postgres, MongoDB, Redis.
+    \item API: RESTful API
+    \item Operating Systems: Linux, MacOS
+    \item Tools: Git, Docker, Gitlab CI/CD, Jenkin.
+\end{itemize}
 
 \end{document}
